@@ -1,5 +1,11 @@
 # A Note for Enabling NetworkInstance IE Encoding for free5GC v3.3.0
 
+---
+
+### [Sample Configurations and Miscellaneous for Mobile Network](https://github.com/s5uishida/sample_config_misc_for_mobile_network)
+
+---
+
 For free5GC v3.3.0, `Network Instance IE` of `PFCP Session Establishment Request` sent from SMF to UPF is not encoded by default.
 In this case, `PFCP Session Establishment` may fail between free5GC SMF and other UPF.
 Therefore, by adding the following line in the free5GC SMF configuration file `smfcfg.yaml`, the Network Instance IE of `PFCP Session Establishment Request` can be encoded and sent to the UPF.
